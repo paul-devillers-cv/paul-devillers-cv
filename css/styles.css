@@ -4770,3 +4770,93 @@ td:last-child {
     }
 }
 
+/* ===================================================================
+ * # CONTACT PHOTO STYLES
+ * ------------------------------------------------------------------- */
+.contact-info-with-photo {
+    align-items: center;
+}
+
+.contact-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(199, 62, 29, 0.3);
+}
+
+/* Responsive styles for contact photo */
+@media screen and (max-width: 1200px) {
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info-with-photo {
+        text-align: center;
+    }
+    
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+        margin-bottom: var(--vspace-1);
+    }
+    
+    .contact-photo-container {
+        justify-content: center;
+        margin-bottom: var(--vspace-1);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Animation for photo */
+.profile-photo {
+    animation: fadeInPhoto 0.8s ease-out 0.5s both;
+}
+
+@keyframes fadeInPhoto {
+    from {
+        opacity: 0;
+        transform: scale(0.9) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
