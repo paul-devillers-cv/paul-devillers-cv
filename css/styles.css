@@ -4874,4 +4874,5 @@ td:last-child {
 /* Décale le texte dans le footer vers la gauche sur tous les supports */
 .s-footer__about .attention-getter {
     margin-left: var(--vspace-0_5);
+    margin-right: var(--vspace-0_5);
 }
