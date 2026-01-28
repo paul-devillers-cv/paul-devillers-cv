@@ -4860,3 +4860,18 @@ td:last-child {
         transform: scale(1) rotate(0deg);
     }
 }
+
+/* Décale le texte dans le footer vers la gauche */
+.s-footer__about .attention-getter {
+    margin-left: var(--vspace-0_5);
+}
+
+@media screen and (max-width: 800px) {
+    .s-footer__about .attention-getter {
+        margin-left: 0;
+    }
+}
+/* Décale le texte dans le footer vers la gauche sur tous les supports */
+.s-footer__about .attention-getter {
+    margin-left: var(--vspace-0_5);
+}
